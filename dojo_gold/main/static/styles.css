@@ -1,0 +1,29 @@
+.flex-container, .flex-container-top, .flex-container-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container-top {
+    justify-content: left;
+}
+
+p2 {
+    border:2px solid black;
+    margin: 16px 0 0 16px;
+    width: 100px;
+    height: 18.4px;
+}
+
+.box {
+    border:2px solid black;
+    width: 200px;
+    margin: 0 16px 0 16px;
+    text-align: center;
+}
+
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}

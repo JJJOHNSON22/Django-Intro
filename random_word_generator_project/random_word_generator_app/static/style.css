@@ -1,0 +1,33 @@
+body {
+    margin-top: 50px;
+}
+
+p, h1 {
+    text-align: center;
+    display: block;
+    margin: 10px auto 10px auto;
+    font-weight: bold;
+}
+
+button, form {
+    width: 100px;
+    margin: auto;
+}
+
+#container {
+    text-align: center;
+}
+
+p {
+    width: 300px;
+    height: 20px;
+}
+
+h1 {
+    border-color: black;
+    border-style: solid;
+    font-size: xx-large;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+}

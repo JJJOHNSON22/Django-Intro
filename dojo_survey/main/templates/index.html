@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Index</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+    <div>
+        <h1>Please fill out the form below</h1>
+        <form action="/result" method="POST">
+            {% csrf_token %}
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name">
+
+            <p>Please select your gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+
+            <p>Select your dojo location:</p>
+            <label for="location"></label>
+            <select name="location" id="location">
+                <option value="San Antonio">San Antonio</option>
+                <option value="Seattle">Seattle</option>
+            </select><br>
+
+            <p>Select your favorite language:</p>
+            <label for="language"></label>
+            <select name="language" id="language">
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="C#">C#</option>
+            </select><br><br>
+
+            <p>What languages are you comfortable with?</p>
+            <input type="checkbox" id="lang_list[]" name="lang_list[]" value="Python">
+            <label for="vehicle1"> Python</label><br>
+            <input type="checkbox" id="lang_list[]" name="lang_list[]" value="JavaScript">
+            <label for="vehicle2"> JavaScript</label><br>
+            <input type="checkbox" id="lang_list[]" name="lang_list[]" value="C#">
+            <label for="vehicle3"> C#</label><br><br>
+            <input type="submit" value="Submit">
+
+            <input type="submit" value="Submit">
+            
+        </form>
+    </div>
+</body>
+
+</html>
